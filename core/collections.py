@@ -7,13 +7,12 @@ def even(some_not_even_list):
 # Следующий код с циклом, переписать с использованием спискового включения (list comprehension)
 years_of_birth = [1990, 1991, 1990, 1990, 1992, 1991]
 def get_ages(some_years_of_birth):
-    ages = [2014-year for year in some_years_of_birth]
-    return ages
+    return [2014-year for year in some_years_of_birth]
 
 # Есть список numbers, реализовать логику в функции get_first_n_last: вернуть новый список состоящий из первого и последнего элемента переданного списка
 numbers = [5, 10, 15, 20, 25]
 def get_first_n_last(some_list):
-    if len(some_list):
+    if some_list:
         return [some_list[0], some_list[-1]]
     else:
         return []
